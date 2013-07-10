@@ -47,6 +47,22 @@
 #   end
 # end
 
+###
+# Helpers
+###
+ 
+def page_classes
+  path = request.path_info.dup
+  path << settings.index_file if path.match(%r{/$})
+  path = path.gsub(%r{^/}, '')
+ 
+  classes = []
+  parts = path.split('.')[0].split('/')
+  parts.each_with_index { |path, i| classes << parts.first(i+1).join('_') }
+ 
+  classes.join(' ')
+end
+
 set :css_dir, 'css'
 
 set :js_dir, 'js'
