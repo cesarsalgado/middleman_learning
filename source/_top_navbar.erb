@@ -1,0 +1,69 @@
+<!-- Navbar
+================================================== -->
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <!-- Button to homepage -->
+      <a class="brand" href="./index.html">cesarsalgado.com</a>
+
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+
+          <!-- Blog -->
+          <% if !defined?(:blog_active) %>
+            <% blog_active = '' %>
+          <% end %>
+          <li class=<%= blog_active %> >
+            <a href="./blog.html">Blog</a>
+          </li>
+
+          <!-- Curriculum -->
+          <% if !defined?(:curriculum_active) %>
+            <% curriculum_active = '' %>
+          <% end %>
+          <li class=<%= curriculum_active %> >
+            <a href="./curriculum.html">Curriculum</a>
+          </li>
+
+          <!-- Academic -->
+          <% if !defined?(:academic_active) %>
+            <% academic_active = '' %>
+          <% end %>
+          <li class=<%= academic_active %> >
+            <a href="./academic.html">Academic</a>
+          </li>
+
+          <!-- Bio -->
+          <% if !defined?(:bio_active) %>
+            <% bio_active = '' %>
+          <% end %>
+          <li class=<%= bio_active %> >
+            <a href="./bio.html">Bio</a>
+          </li>
+
+          <!-- Apps -->
+          <% if !defined?(:apps_active) %>
+            <% apps_active = '' %>
+          <% end %>
+          <li class=<%= apps_active %> >
+            <a href="./apps.html">Apps</a>
+          </li>
+
+          <% if !defined?(:more_active) %>
+            <% more_active = '' %>
+          <% end %>
+          <li class=<%= more_active %> >
+            <a href="./more.html">More</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
