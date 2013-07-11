@@ -16,6 +16,14 @@
       <div class="nav-collapse collapse">
         <ul class="nav">
 
+          <!-- Home -->
+          <% if !defined?(:home_active) %>
+            <% home_active = '' %>
+          <% end %>
+          <li class=<%= home_active %> >
+            <a href="./index.html">Home</a>
+          </li>
+
           <!-- Blog -->
           <% if !defined?(:blog_active) %>
             <% blog_active = '' %>

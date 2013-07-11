@@ -2,13 +2,11 @@
 layout: layout
 ---
 
-<%= partial "top_navbar" %>
+<%= partial(:top_navbar, :locals => { :home_active => 'active'}) %>
 
 <div class="container">
 
-  <!-- Download
-  ================================================== -->
-  <section id="download-bootstrap">
+  <section>
     <div class="page-header">
       <h1>1. Download</h1>
     </div>
