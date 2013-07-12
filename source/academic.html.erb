@@ -1,5 +1,10 @@
 ---
 layout: layout
+sections:
+  - Interests
+  - Education
+  - Research Experience
+  - Online Courses
 ---
 
 <%= partial(:top_navbar, :locals => { :academic_active => 'active'}) %>
@@ -9,47 +14,121 @@ layout: layout
   <!-- sites nav
   ================================================== -->
   <div class="row">
+
     <div class="span3 bs-docs-sidebar">
-      <ul class="nav nav-list bs-docs-sidenav">
-        <li><a href="#download-bootstrap"><i class="icon-chevron-right"></i> Download</a></li>
-        <li><a href="#what-next"><i class="icon-chevron-right"></i> What next?</a></li>
+      <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="0">
+        <% current_page.data.sections.each do |s| %>
+          <li><a href=<%= "##{s.gsub(' ', '-').downcase}" %>> <i class="icon-chevron-right"></i> <%= s %> </a></li>
+        <% end %>
       </ul>
     </div>
+
     <div class="span9">
-
-      <!-- Download
-      ================================================== -->
-      <section id="download-bootstrap">
+      <section id="interests">
         <div class="page-header">
-          <h1>1. Download</h1>
-        </div>
-        <p class="lead">Before downloading, be sure to have a code editor (we recommend <a href="http://sublimetext.com/2">Sublime Text 2</a>) and some working knowledge of HTML and CSS. We won't walk through the source files here, but they are available for download. We'll focus on getting started with the compiled Bootstrap files.</p>
-
-        <div class="row-fluid">
-          <div class="span6">
-            <h2>Download compiled</h2>
-            <p><strong>Fastest way to get started:</strong> get the compiled and minified versions of our CSS, JS, and images. No docs or original source files.</p>
-            <p><a class="btn btn-large btn-primary" href="/bootstrap.zip" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);">Download Bootstrap</a></p>
-          </div>
-          <div class="span6">
-            <h2>Download source</h2>
-            <p>Get the original files for all CSS and JavaScript, along with a local copy of the docs by downloading the latest version directly from GitHub.</p>
-            <p><a class="btn btn-large" href="https://github.com/twitter/bootstrap/zipball/master" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download source']);">Download Bootstrap source</a></p>
-          </div>
-        </div>
+          <h1>Interests</h1>
+        </div>  
+        <p class="lead">My major areas of interest are Computer Science, Physics, Neuroscience, and Mathematics.</p>
+        <p class="lead">Below I list some specific topics for which I have interest in doing reaserch on and for which I have some exposure. My experience in each area are also shown.</p>
+        <ul>
+          <li>Artificial Intelligence and Machine/Statistical Learning<ul>
+            <li>My <a href="#research-experience">Undergrad Research Project</a> was in this field.</li>
+            <li>Took <a href="#online-courses">some online courses</a> in this area too.</li>
+          </ul></li>
+          <li>Computational Neuroscience<ul>
+            <li>Took one online courses in this field.</li>
+          </ul></li>
+          <li>Information Theory<ul>
+            <li>Currently takinng <a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-441-information-theory-spring-2010/index.htm">6.441-Iformation Theory</a> at MIT OpenCourseWare.</li>
+          </ul></li>
+        </ul>
+        <p class="lead">Some topics that I'm curious to learn about, but not necessarily do research, are shown below.</p>
+        <ul>
+          <li>General Relativity</li>
+          <li>Some Advanced Mathematics Courses such as:<ul>
+            <li>Number Theory</li>
+            <li>Real Analysis</li>
+            <li>Algebra</li>
+            <li>Topology</li>
+            <li>Functional Analysis</li>
+            <li>Geometry</li>
+          </ul></li>
+          <li>Economics</li>
+        </ul>
       </section>
 
-      <!-- Next
-      ================================================== -->
-      <section id="what-next">
+      <section id="education">
         <div class="page-header">
-          <h1>What next?</h1>
+          <h1>Education</h1>
         </div>
-        <p class="lead">Head to the docs for information, examples, and code snippets, or take the next leap and customize Bootstrap for any upcoming project.</p>
-        <a class="btn btn-large btn-primary" href="./scaffolding.html" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Next steps', 'Visit docs']);">Visit the Bootstrap docs</a>
-        <a class="btn btn-large" href="./customize.html" style="margin-left: 5px;" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Next steps', 'Customize']);">Customize Bootstrap</a>
+        <p class="lead">University of Sao Paulo</p>
+        <ul>
+          <li>Bachelor's Degree, Computer Engineering (2007 - 2012)</li>
+        </ul>
+      </section>
+
+      <section id="research-experience">
+        <div class="page-header">
+          <h1>Research Experience</h1>
+        </div>
+        <p class="lead">Graduation Project</p>
+        <ul>
+          <li>Developed an interactive software in Java to balance assembly lines.</li>
+        </ul>
+        <p class="lead">Undergraduate Research Scholarship</p>
+        <ul>
+          <li>Developed a distributed evolutionary clustering algorithm based on k-means.</li>
+          <li>It was programmed in C and it used MPI for communication between the nodes.</li>
+        </ul> 
+      </section>
+
+      <section id="online-courses">
+        <div class="page-header">
+          <h1>Online Courses</h1>
+        </div>
+        <p class="lead">Online Courses I've taken.</p>
+        <ul>
+          <li>Computer Science<ul>
+            <li>Artificial Intelligence<ul>
+              <li>CS188.1x: Artificial Intelligence - Berkeley - edX</li>
+              <li>Machine Learning - Stanford - Coursera</li>
+            </ul></li>
+            <li>Others<ul>
+              <li>Algorithms: Design and Analysis, Part 1 - Stanford - Coursera</li>
+              <li>Algorithms: Design and Analysis, Part 2 - Stanford - Coursera</li>        
+              <li>Functional Programming Principles in Scala - EPFL - Coursera</li>
+              <li>CS169.1x: Software as a Service - Berkeley - edX</li>
+              <li>CS169.2x: Software as a Service - Berkeley - edX</li>
+              <li>Cryptography I - Stanford - Coursera</li>
+              <li>Introduction to Computer Science - Udacity (Although the concepts of computer science were pretty easy for me, this class was still helpful to learn the basics of python and search engines)</li>
+            </ul></li>
+          </ul></li>
+          <li>Neuroscience<ul>
+            <li>Computational Neuroscience - University of Washington - Coursera</li>
+            <li>Synapses, Neurons and Brains - University of Jerusalem - Coursera</li>
+          </ul></li>
+          <li>Physics<ul>
+            <li>C10: Physics for future Presidents, with Richard A. Muller - webcast.berkeley</li>
+            <li>8.02: Electricity and Magnetism - MIT OpenCourseWare</li>
+          </ul></li>
+          <li>Mathematics<ul>
+            <li>18.06: Linear Algebra - MIT OpenCourseWare</li>
+          </ul></li>
+          <li>Social Sciences and Humanities<ul>
+            <li><a href="http://www.justiceharvard.org">Justice - Harvard</a></li>
+            <li>Introduction To Psychology, with Paul Bloom - Open Yale Courses</li>
+          </ul></li>
+        </ul>
+
+        <p class="lead">Courses that I am currently taking.</p>
+        <ul>
+          <li>Startup Engineering - Stanford - Coursera</li>
+        </ul> 
+
+        <p class="lead">To list only the online courses for which I have certification of completion, please, follow this <a href="curriculum.html#online-courses">link</a>.</p>
       </section>
 
     </div>
+  
   </div>
 </div>
