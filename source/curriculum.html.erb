@@ -1,5 +1,15 @@
 ---
 layout: layout
+sections:
+  - Resume
+  - Education
+  - Work Experience
+  - Major School Projects
+  - Other Experiences
+  - Technical Skills
+  - Certifications
+  - Languages
+  - Online Courses
 ---
 
 <%= partial(:top_navbar, :locals => { :curriculum_active => 'active'}) %>
@@ -12,46 +22,144 @@ layout: layout
 
     <div class="span3 bs-docs-sidebar">
       <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="0">
-        <li><a href="#introduction"><i class="icon-chevron-right"></i> Introduction</a></li>
-        <li><a href="#online_courses"><i class="icon-chevron-right"></i> Online Courses</a></li>
+        <% current_page.data.sections.each do |s| %>
+          <li><a href=<%= "##{s.gsub(' ', '-').downcase}" %>> <i class="icon-chevron-right"></i> <%= s %> </a></li>
+        <% end %>
       </ul>
     </div>
 
 
     <div class="span9">
-      <!-- Download
-      ================================================== -->
-      <section id="introduction">
-        <div class="page-header">
-          <h1>1. Download</h1>
-        </div>
-        <p class="lead">Before downloading, be sure to have a code editor (we recommend <a href="http://sublimetext.com/2">Sublime Text 2</a>) and some working knowledge of HTML and CSS. We won't walk through the source files here, but they are available for download. We'll focus on getting started with the compiled Bootstrap files.</p>
 
-        <div class="row-fluid">
-          <div class="span6">
-            <h2>Download compiled</h2>
-            <p><strong>Fastest way to get started:</strong> get the compiled and minified versions of our CSS, JS, and images. No docs or original source files.</p>
-            <p><a class="btn btn-large btn-primary" href="/bootstrap.zip" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);">Download Bootstrap</a></p>
-          </div>
-          <div class="span6">
-            <h2>Download source</h2>
-            <p>Get the original files for all CSS and JavaScript, along with a local copy of the docs by downloading the latest version directly from GitHub.</p>
-            <p><a class="btn btn-large" href="https://github.com/twitter/bootstrap/zipball/master" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download source']);">Download Bootstrap source</a></p>
-          </div>
-        </div>
+      <section id="resume">
+        <div class="page-header">
+          <h1>Resume</h1>
+        </div>  
+        <p class="lead">You can find my resume in PDF format <a href="http://dl.dropbox.com/u/9578179/cesar_salgado_resume.pdf">here</a>.</p>
+        <p class="lead">My curriculum is shown below.</p>
+
       </section>
 
-      <!-- Next
-      ================================================== -->
-      <section id="online_courses">
+      <section id="education">
         <div class="page-header">
-          <h1>What next?</h1>
+          <h1>Education</h1>
         </div>
-        <p class="lead">Head to the docs for information, examples, and code snippets, or take the next leap and customize Bootstrap for any upcoming project.</p>
-        <a class="btn btn-large btn-primary" href="./scaffolding.html" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Next steps', 'Visit docs']);">Visit the Bootstrap docs</a>
-        <a class="btn btn-large" href="./customize.html" style="margin-left: 5px;" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Next steps', 'Customize']);">Customize Bootstrap</a>
+        <p class="lead">University of Sao Paulo</p>
+        <ul>
+          <li>Bachelor's Degree, Computer Engineering (2007 - 2012)</li>
+        </ul>
+      </section>
+
+      <section id="work-experience">
+        <div class="page-header">
+          <h1>Work Experience</h1>
+        </div>
+        <p class="lead"><strong>Pinuts Studios</strong> - Android Developer (Jul 2012 – Oct 2012)</p>
+        <ul>
+          <li>Developed a game for android. It was developed by a team of 2 engineers.</li>
+        </ul> 
+        <p class="lead"><strong>Neolog Consultoria e Sistemas</strong> - Java Developer Intern (Jan 2012 - Jun 2012)</p>
+        <ul>
+          <li>Maintained and improved a supply chain optimization software</li>
+          <li>Learned Spring, Hibernate, and JasperReport</li>
+          <li>Learned Scrum</li>
+        </ul> 
+      </section>
+
+      <section id="major-school-projects">
+        <div class="page-header">
+          <h1>Major School Projects</h1>
+        </div>
+        <p class="lead">Graduation Project</p>
+        <ul>
+          <li>Developed an interactive software in Java to balance assembly lines.</li>
+        </ul>
+        <p class="lead">Undergraduate Research Scholarship</p>
+        <ul>
+          <li>Developed a distributed evolutionary clustering algorithm based on k-means.</li>
+          <li>It was programmed in C and it used MPI for communication between the nodes.</li>
+        </ul> 
+      </section>
+
+      <section id="other-experiences">
+        <div class="page-header">
+          <h1>Other Experiences</h1>
+        </div>
+        <p class="lead">Associacao Formiga Verde - Volunteer Work</p>
+        <ul>
+          <li>Classes in physics and math were given to disadvantaged Brazilians.</li>
+        </ul>
+        <p class="lead">Tutoring of Calculus – University of Sao Paulo</p>
+        <ul>
+          <li>Tutoring of Calculus to undergraduate students.</li>
+        </ul> 
+        <p class="lead">EESC jr. – Marketing Manager</p>
+        <ul>
+          <li>Marketing Manager in the Junior-Enterprise of the School of Engineering.</li>
+          <li>Events and company’s recruitment process on campus were organized.</li>
+        </ul> 
+        <p class="lead">Rotary International student exchange program</p>
+        <ul>
+          <li>Spent a year living with three host families and attending High School in Denmark.</li>
+        </ul> 
+      </section>
+
+      <section id="technical-skills">
+        <div class="page-header">
+          <h1>Technical Skills</h1>
+        </div>
+        <ul>
+          <li>Experience in Java, C, Matlab, and SQL.</li>
+          <li>Exposed to Python, Ruby, HTML, and CSS.</li>
+          <li>Platforms: Android (developer), Linux (user), and Windows (user).</li>
+          <li>Experience with the following APIs and Frameworks: Spring, Hibernate, Rails, and MPI.</li>
+          <li>Experience in implementing Machine Learning algorithms.</li>
+        </ul>
+      </section>
+
+      <section id="certifications">
+        <div class="page-header">
+          <h1>Certifications</h1>
+        </div>
+        <ul>
+          <li>Oracle Certified Professional, Java SE 6 Programmer.</li>
+        </ul>
+      </section>
+
+      <section id="languages">
+        <div class="page-header">
+          <h1>Languages</h1>
+        </div>
+        <ul>
+          <li>English: <strong>Advanced</strong></li>
+          <li>Portuguese: <strong>Native</strong></li>
+          <li>Danish: <strong>Beginner</strong></li>
+        </ul>
+      </section>
+
+      <section id="online-courses">
+        <div class="page-header">
+          <h1>Online Courses</h1>
+        </div>
+        <p class="lead">Below I show the online courses for which I obtained certification of completion.</p>
+        <ul>
+          <li>CS188.1x: Artificial Intelligence - Berkeley - edX</li>
+          <li>Machine Learning - Stanford - Coursera</li>
+          <li>Algorithms: Design and Analysis, Part 1 - Stanford - Coursera</li>
+          <li>Algorithms: Design and Analysis, Part 2 - Stanford - Coursera</li>        
+          <li>Functional Programming Principles in Scala - EPFL - Coursera</li>
+          <li>CS169.1x: Software as a Service - Berkeley - edX</li>
+          <li>CS169.2x: Software as a Service - Berkeley - edX</li>
+          <li>Cryptography I - Stanford - Coursera</li>
+          <li>Computational Neuroscience - University of Washington - Coursera</li>
+        </ul>
+        <p class="lead">More information about the courses above can be found at <a href="http://www.coursera.org/">coursera.org</a> and <a href="http://www.edx.org/">edx.org</a>.</p>
+
+        <p class="lead">To list all online courses that I've already taken, including those without certification, please follow this <a href="academic.html#online-courses">link</a>.</p>
+
       </section>
 
     </div>
+  
   </div>
 </div>
