@@ -21,7 +21,13 @@ h3 code {
   font-weight: normal;
 }
 
+#no-sidenav-container {
+  width: 75%;
+}
 
+#my_pic {
+  margin-top: 7px;
+}
 
 /* Tweak navbar brand link to be super sleek
 -------------------------------------------------- */
