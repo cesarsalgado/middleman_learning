@@ -60,7 +60,7 @@
 
           <!-- Home -->
           
-          <li class=active >
+          <li class= >
             <a href="./index.html">Home</a>
           </li>
 
@@ -72,7 +72,7 @@
 
           <!-- Curriculum -->
           
-          <li class= >
+          <li class=active >
             <a href="./curriculum.html">Curriculum</a>
           </li>
 
@@ -104,34 +104,170 @@
   </div>
 </div>
 
-<div id="no-sidenav-container" class="container">
+<div class="container">
 
-  <section>
-    <div class="page-header">
-      <h1>Cesar Salgado's Personal Site</h1>
+  <!-- sites nav
+  ================================================== -->
+  <div class="row">
+
+    <div class="span3 bs-docs-sidebar">
+      <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="0">
+        
+          <li><a href=#resume> <i class="icon-chevron-right"></i> Resume </a></li>
+        
+          <li><a href=#education> <i class="icon-chevron-right"></i> Education </a></li>
+        
+          <li><a href=#work-experience> <i class="icon-chevron-right"></i> Work Experience </a></li>
+        
+          <li><a href=#major-school-projects> <i class="icon-chevron-right"></i> Major School Projects </a></li>
+        
+          <li><a href=#other-experiences> <i class="icon-chevron-right"></i> Other Experiences </a></li>
+        
+          <li><a href=#technical-skills> <i class="icon-chevron-right"></i> Technical Skills </a></li>
+        
+          <li><a href=#certifications> <i class="icon-chevron-right"></i> Certifications </a></li>
+        
+          <li><a href=#languages> <i class="icon-chevron-right"></i> Languages </a></li>
+        
+          <li><a href=#online-courses> <i class="icon-chevron-right"></i> Online Courses </a></li>
+        
+      </ul>
     </div>
 
-    <div class="row-fluid">
-      <div class="span4">
-        <img id="my_pic" src="img/com_cesarsalgado_bariloche.jpg" />
-      </div>
-      <div class="span8">
-        <p class="lead">Hi! My name is Cesar Salgado Vieira de Souza. I graduated in 2012 from University of Sao Paulo with a B.S. in Computer Engineering.</p>
-        <p class="lead">In 2012 I worked as a Software Engineer for 8 months programming in Java. Then I decided to take a year off to study many things which I would like to know more before moving on.</p>
-      </div>
-      <p class="lead">Next year I plan to start a master's degree program. Probably in the area of Machine Learning. But I'm not sure yet. I like physics too, so maybe I will try a masters in that field.</p>
+
+    <div class="span9">
+
+      <section id="resume">
+        <div class="page-header">
+          <h1>Resume</h1>
+        </div>  
+        <p class="lead">You can find my resume in PDF format <a href="http://dl.dropbox.com/u/9578179/cesar_salgado_resume.pdf">here</a>.</p>
+        <p class="lead">My curriculum is shown below.</p>
+
+      </section>
+
+      <section id="education">
+        <div class="page-header">
+          <h1>Education</h1>
+        </div>
+        <p class="lead">University of Sao Paulo</p>
+        <ul>
+          <li>Bachelor's Degree, Computer Engineering (2007 - 2012)</li>
+        </ul>
+      </section>
+
+      <section id="work-experience">
+        <div class="page-header">
+          <h1>Work Experience</h1>
+        </div>
+        <p class="lead"><strong>Pinuts Studios</strong> - Android Developer (Jul 2012 – Oct 2012)</p>
+        <ul>
+          <li>Developed a game for android. It was developed by a team of 2 engineers.</li>
+        </ul> 
+        <p class="lead"><strong>Neolog Consultoria e Sistemas</strong> - Java Developer Intern (Jan 2012 - Jun 2012)</p>
+        <ul>
+          <li>Maintained and improved a supply chain optimization software</li>
+          <li>Learned Spring, Hibernate, and JasperReport</li>
+          <li>Learned Scrum</li>
+        </ul> 
+      </section>
+
+      <section id="major-school-projects">
+        <div class="page-header">
+          <h1>Major School Projects</h1>
+        </div>
+        <p class="lead">Graduation Project</p>
+        <ul>
+          <li>Developed an interactive software in Java to balance assembly lines.</li>
+        </ul>
+        <p class="lead">Undergraduate Research Scholarship</p>
+        <ul>
+          <li>Developed a distributed evolutionary clustering algorithm based on k-means.</li>
+          <li>It was programmed in C and it used MPI for communication between the nodes.</li>
+        </ul> 
+      </section>
+
+      <section id="other-experiences">
+        <div class="page-header">
+          <h1>Other Experiences</h1>
+        </div>
+        <p class="lead">Associacao Formiga Verde - Volunteer Work</p>
+        <ul>
+          <li>Classes in physics and math were given to disadvantaged Brazilians.</li>
+        </ul>
+        <p class="lead">Tutoring of Calculus – University of Sao Paulo</p>
+        <ul>
+          <li>Tutoring of Calculus to undergraduate students.</li>
+        </ul> 
+        <p class="lead">EESC jr. – Marketing Manager</p>
+        <ul>
+          <li>Marketing Manager in the Junior-Enterprise of the School of Engineering.</li>
+          <li>Events and company’s recruitment process on campus were organized.</li>
+        </ul> 
+        <p class="lead">Rotary International student exchange program</p>
+        <ul>
+          <li>Spent a year living with three host families and attending High School in Denmark.</li>
+        </ul> 
+      </section>
+
+      <section id="technical-skills">
+        <div class="page-header">
+          <h1>Technical Skills</h1>
+        </div>
+        <ul>
+          <li>Experience in Java, C, Matlab, and SQL.</li>
+          <li>Exposed to Python, Ruby, HTML, and CSS.</li>
+          <li>Platforms: Android (developer), Linux (user), and Windows (user).</li>
+          <li>Experience with the following APIs and Frameworks: Spring, Hibernate, Rails, and MPI.</li>
+          <li>Experience in implementing Machine Learning algorithms.</li>
+        </ul>
+      </section>
+
+      <section id="certifications">
+        <div class="page-header">
+          <h1>Certifications</h1>
+        </div>
+        <ul>
+          <li>Oracle Certified Professional, Java SE 6 Programmer.</li>
+        </ul>
+      </section>
+
+      <section id="languages">
+        <div class="page-header">
+          <h1>Languages</h1>
+        </div>
+        <ul>
+          <li>English: <strong>Advanced</strong></li>
+          <li>Portuguese: <strong>Native</strong></li>
+          <li>Danish: <strong>Beginner</strong></li>
+        </ul>
+      </section>
+
+      <section id="online-courses">
+        <div class="page-header">
+          <h1>Online Courses</h1>
+        </div>
+        <p class="lead">Below I show the online courses for which I obtained certification of completion.</p>
+        <ul>
+          <li>CS188.1x: Artificial Intelligence - Berkeley - edX</li>
+          <li>Machine Learning - Stanford - Coursera</li>
+          <li>Algorithms: Design and Analysis, Part 1 - Stanford - Coursera</li>
+          <li>Algorithms: Design and Analysis, Part 2 - Stanford - Coursera</li>        
+          <li>Functional Programming Principles in Scala - EPFL - Coursera</li>
+          <li>CS169.1x: Software as a Service - Berkeley - edX</li>
+          <li>CS169.2x: Software as a Service - Berkeley - edX</li>
+          <li>Cryptography I - Stanford - Coursera</li>
+          <li>Computational Neuroscience - University of Washington - Coursera</li>
+        </ul>
+        <p class="lead">More information about the courses above can be found at <a href="http://www.coursera.org/">coursera.org</a> and <a href="http://www.edx.org/">edx.org</a>.</p>
+
+        <p class="lead">To list all online courses that I've already taken, including those without certification, please follow this <a href="academic.html#online-courses">link</a>.</p>
+
+      </section>
+
     </div>
-
-  </section>
-
-
-  <section>
-    <div class="page-header">
-      <h2>News</h2>
-    </div>
-    <p class="lead">No news yet.</p>
-  </section>
   
+  </div>
 </div>
 
 
