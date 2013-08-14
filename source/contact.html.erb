@@ -1,0 +1,39 @@
+---
+layout: layout
+---
+
+<%= partial(:top_navbar, :locals => { :contact_active => 'active'}) %>
+
+<div id="no-sidenav-container" class="container">
+
+  <section id="contact">
+    <div class="page-header">
+      <h1>Contact</h1>
+    </div>  
+
+    <p class="lead">To obtain my email fill in the fields below acoording to the <strong>rule</strong> and then press the "Show Email" button.</p>
+
+    <p><strong>Rule</strong>: firstname -> cesar, 1 -> s , 2 -> v , 3 -> s</p>
+
+    <form id="generate_email_form" class="form-inline">
+      <input type="text" class="input-small" placeholder="firstname">
+      <input type="text" class="input-small" placeholder="1">
+      <input type="text" class="input-small" placeholder="2">
+      <input type="text" class="input-small" placeholder="3">
+      <button id="generate_email" type="submit" class="btn" >Show Email</button>
+    </form>
+
+    <div class="lead">
+      <span id="generated_succesful_email" class="label label-success"></span>
+      <span id="generated_wrong_email" class="label label-important"></span>
+    </div>
+
+    <details>
+      <summary>Why is this necessary?</summary>
+      <p>This is necessary to hide my email from <a href="http://en.wikipedia.org/wiki/Email_address_harvesting">Email Crawlers</a>. These are computer programs that systematically browses the web looking for email addresses. Often the collected emails are used by spammers.</p>
+      <p>So I'm trying to avoid spams in my inbox by making sure you are't a computer program.</p>
+      <p>The process of testing whether you are a human in this site can be viewed as a primitive form of <a href="http://en.wikipedia.org/wiki/CAPTCHA">CAPTCHA</a>. I didn't use a more sofisticated implementation such as <a href="http://en.wikipedia.org/wiki/ReCAPTCHA">reCAPTCHA</a> because my site is entirely static and I think reCAPTCHA requires server-side code for it to work.</p>
+    </details>
+  </section>
+
+</div>

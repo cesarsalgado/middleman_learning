@@ -56,20 +56,29 @@
             <a href="./about.html">About</a>
           </li>
 
+          <!-- Contact -->
+          <% if !defined?(:contact_active) %>
+            <% contact_active = '' %>
+          <% end %>
+          <li class=<%= contact_active %> >
+            <a href="./contact.html">Contact</a>
+          </li>
+
           <!-- Apps -->
-          <% if !defined?(:apps_active) %>
+<!--           <% if !defined?(:apps_active) %>
             <% apps_active = '' %>
           <% end %>
           <li class=<%= apps_active %> >
             <a href="./apps.html">Apps</a>
           </li>
-
-          <% if !defined?(:more_active) %>
+ -->
+<!--           <% if !defined?(:more_active) %>
             <% more_active = '' %>
           <% end %>
           <li class=<%= more_active %> >
             <a href="./more.html">More</a>
           </li>
+ -->        
         </ul>
       </div>
     </div>
