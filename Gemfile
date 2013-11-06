@@ -2,4 +2,10 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem "middleman", "~>3.0.14"
+gem "middleman"
+
+gem "middleman-livereload", "~> 3.1.0"
+
+gem "middleman-blog"
+
+gem "rb-inotify", "~>0.9"
