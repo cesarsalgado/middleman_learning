@@ -62,6 +62,12 @@
  
 #   classes.join(' ')
 # end
+#
+activate :livereload
+
+activate :i18n
+
+activate :directory_indexes
 
 set :css_dir, 'css'
 
@@ -91,7 +97,3 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
-
-activate :livereload
-
-activate :directory_indexes
