@@ -2,13 +2,13 @@
 layout: layout
 ---
 
-<%= partial(:top_navbar, :locals => { :home_active => 'active'}) %>
+<%= partial(:top_navbar, :locals => { :home_active => "active"}) %>
 
 <div id="no-sidenav-container" class="container">
 
   <section>
     <div class="page-header">
-      <h1>Cesar Salgado's <%= I18n.t(:home) %></h1>
+      <h1><%= I18n.t(:home_header) %></h1>
     </div>
 
     <%= partial "about_partial" %>
