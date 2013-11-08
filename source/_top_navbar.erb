@@ -94,7 +94,7 @@
                 <% en_active = "" %>
               <% end %>
               <li class="<%= en_active %>" >
-                <a href="/">english</a>
+                <a href="<%= get_url_in_default_lang(current_page.url, I18n.locale) %>">english</a>
               </li>
 
               <!-- Portuguese -->
@@ -104,7 +104,7 @@
                 <% pt_active = "" %>
               <% end %>
               <li class="<%= pt_active %>" >
-                <a href="/pt/">português</a>
+                <a href="/pt<%= get_url_in_default_lang(current_page.url, I18n.locale) %>">português</a>
               </li>
             </ul>
           </div>

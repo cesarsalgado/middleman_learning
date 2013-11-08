@@ -41,11 +41,16 @@
 # activate :automatic_image_sizes
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def get_url_in_default_lang(current_url, current_locale)
+    locale_str = current_locale.to_s
+    if locale_str != 'en'
+      current_url.sub("/#{locale_str}", '')
+    else
+      current_url
+    end
+  end
+end
 
 ###
 # Helpers
