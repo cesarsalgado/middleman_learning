@@ -1,5 +1,8 @@
 ---
 en:
-  earn_certificate: earned certificate
+  home:
+    home_header: Cesar Salgado's Personal Site
+    news: News
+    no_news_yet: No news yet.
 
-  home_header: Cesar Salgado's Personal Site
+  earn_certificate: earned certificate

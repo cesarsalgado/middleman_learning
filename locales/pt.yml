@@ -1,5 +1,8 @@
 ---
 pt:
-  earn_certificate: ganhei certificado
+  home:
+    home_header: Página Pessoal do César Salgado 
+    news: Novidades
+    no_news_yet: Ainda sem novidades.
 
-  home_header: Página Pessoal do César Salgado 
+  earn_certificate: ganhei certificado
