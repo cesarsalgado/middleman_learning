@@ -1,5 +1,15 @@
 ---
 pt:
+  topmenu:
+    home: Principal 
+    blog: Blog
+    curriculum: Curriculum
+    academic: Acadêmico
+    bio: Bio
+    contact: Contato
+    apps: Apps
+    more: Mais
+
   home:
     home_header: Página Pessoal do César Salgado 
     news: Novidades

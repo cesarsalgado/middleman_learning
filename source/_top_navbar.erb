@@ -23,7 +23,7 @@
                 <% home_active = "" %>
               <% end %>
               <li class="<%= home_active %>" >
-                <a href="./">Home</a>
+                <a href="./"><%= I18n.t('topmenu.home') %></a>
               </li>
 
               <!-- Blog -->
@@ -31,7 +31,7 @@
                 <% blog_active = "" %>
               <% end %>
               <li class="<%= blog_active %>" >
-                <a href="./blog">Blog</a>
+                <a href="./blog"><%= I18n.t('topmenu.blog') %></a>
               </li>
 
               <!-- Curriculum -->
@@ -39,7 +39,7 @@
                 <% curriculum_active = "" %>
               <% end %>
               <li class="<%= curriculum_active %>" >
-                <a href="./curriculum">Curriculum</a>
+                <a href="./curriculum"><%= I18n.t('topmenu.curriculum') %></a>
               </li>
 
               <!-- Academic -->
@@ -47,7 +47,7 @@
                 <% academic_active = "" %>
               <% end %>
               <li class="<%= academic_active %>" >
-                <a href="./academic">Academic</a>
+                <a href="./academic"><%= I18n.t('topmenu.academic') %></a>
               </li>
 
               <!-- About -->
@@ -55,7 +55,7 @@
                 <% about_active = "" %>
               <% end %>
               <li class="<%= about_active %>" >
-                <a href="./about">About</a>
+                <a href="./about"><%= I18n.t('topmenu.bio') %></a>
               </li>
 
               <!-- Contact -->
@@ -63,7 +63,7 @@
                 <% contact_active = "" %>
               <% end %>
               <li class="<%= contact_active %>" >
-                <a href="./contact">Contact</a>
+                <a href="./contact"><%= I18n.t('topmenu.contact') %></a>
               </li>
 
               <!-- Apps -->
@@ -71,14 +71,14 @@
                 <% apps_active = "" %>
               <% end %>
               <li class="<%= apps_active %>" >
-                <a href="./apps">Apps</a>
+                <a href="./apps"><%= I18n.t('topmenu.apps') %></a>
               </li>
      -->
     <!--           <% if !defined?(:more_active) %>
                 <% more_active = "" %>
               <% end %>
               <li class="<%= more_active %>" >
-                <a href="./more">More</a>
+                <a href="./more"><%= I18n.t('topmenu.more') %></a>
               </li>
      -->        
             </ul>
@@ -94,7 +94,7 @@
                 <% en_active = "" %>
               <% end %>
               <li class="<%= en_active %>" >
-                <a href="/">EN</a>
+                <a href="/">english</a>
               </li>
 
               <!-- Portuguese -->
@@ -104,7 +104,7 @@
                 <% pt_active = "" %>
               <% end %>
               <li class="<%= pt_active %>" >
-                <a href="/pt/">PT</a>
+                <a href="/pt/">português</a>
               </li>
             </ul>
           </div>

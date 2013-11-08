@@ -1,5 +1,15 @@
 ---
 en:
+  topmenu:
+    home: Home
+    blog: Blog
+    curriculum: Curriculum
+    academic: Academic
+    bio: Bio
+    contact: Contacts
+    apps: Apps
+    more: More
+
   home:
     home_header: Cesar Salgado's Personal Site
     news: News
