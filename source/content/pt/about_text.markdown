@@ -1,5 +1,5 @@
-Oi! My name is Cesar Salgado Vieira de Souza. I graduated in 2012 from University of Sao Paulo with a B.S. in Computer Engineering.
+Oi! Meu nome é César Salgado Vieira de Souza. Eu me graduei em 2012 em Engenharia de Computação pela Univerisidade de São Paulo.
 
-In 2012 I worked as a Software Engineer for 8 months programming in Java. Then I decided to take a year off to study many things which I would like to know more before moving on.
+Nest mesmo ano também trabalhei como Engenheiro de Software por 8 meses. Depois eu decidi tirar um ano para estudar várias coisas que eu gostaria de aprender antes de seguir em frente.  
 
-Next year I plan to start a master's degree program in Machine Learning.
+No início de 2014 vou iniciar Mestrado na área de Aprendizado de Máquina.
