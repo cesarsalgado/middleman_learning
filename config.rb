@@ -50,6 +50,19 @@ helpers do
       current_url
     end
   end
+
+  def default_locale
+    :en
+  end
+
+  def default_locale?(locale)
+    default_locale === locale
+  end
+
+  def locale_base_path
+    path = "/"
+    path += I18n.locale.to_s unless default_locale?(I18n.locale)
+  end
 end
 
 ###
