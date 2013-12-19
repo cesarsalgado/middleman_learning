@@ -9,6 +9,12 @@ en:
     contact: Contacts
     apps: Apps
     more: More
+  
+  footer:
+    hosted_on: Hosted on
+    and_powered_by: and powered by
+    starting_point: This site used as a starting point the
+    licensed_under: This work is licensed under
 
   home:
     home_header: Cesar Salgado's Personal Site

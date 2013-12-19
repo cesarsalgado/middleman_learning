@@ -9,6 +9,12 @@ pt:
     contact: Contato
     apps: Apps
     more: Mais
+  
+  footer:
+    hosted_on: Hospedado em
+    and_powered_by: e criado com
+    starting_point: Esse site usou como ponto de partida o
+    licensed_under: Esse trabalho está licenciado sob 
 
   home:
     home_header: Página Pessoal do César Salgado 
