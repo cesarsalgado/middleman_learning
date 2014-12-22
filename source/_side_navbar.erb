@@ -2,7 +2,8 @@
   <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="0">
     <% if current_page.data.sections %>
       <% current_page.data.sections.each do |s| %>
-        <li><a href=<%= "##{s.gsub(' ', '-').downcase}" %>> <i class="icon-chevron-right"></i> <%= s %> </a></li>
+        <% ds = s.downcase %>
+        <li><a href=<%= "##{ds}" %>> <i class="icon-chevron-right"></i> <%= I18n.t("#{current_page.eponymous_directory_path[0..-2].gsub('pt/', '')}.side_menu.#{ds}") %> </a></li>
       <% end %>
     <% end %>
   </ul>

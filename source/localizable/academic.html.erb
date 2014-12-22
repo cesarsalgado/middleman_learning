@@ -1,10 +1,10 @@
 ---
 layout: layout
 sections:
-  - Interests
-  - Education
-  - Research Experience
-  - Online Courses
+  - interests
+  - education
+  - research_experience
+  - online_courses
 ---
 
 <%= partial(:top_navbar, :locals => { :academic_active => 'active'}) %>
@@ -20,7 +20,7 @@ sections:
     <div class="span9">
       <section id="interests">
         <div class="page-header">
-          <h1>Interests</h1>
+          <h1><%= I18n.t("academic.side_menu.interests") %></h1>
         </div>  
         <p class="lead">My major areas of interest are Computer Science, Physics, Neuroscience, and Mathematics.</p>
         <p class="lead">Below I list some specific topics for which I have interest in doing reaserch on and for which I have some exposure. My experience in each area are also shown.</p>
@@ -53,7 +53,7 @@ sections:
 
       <section id="education">
         <div class="page-header">
-          <h1>Education</h1>
+          <h1><%= I18n.t("academic.side_menu.education") %></h1>
         </div>
         <p class="lead">University of Sao Paulo</p>
         <ul>
@@ -61,9 +61,9 @@ sections:
         </ul>
       </section>
 
-      <section id="research-experience">
+      <section id="research_experience">
         <div class="page-header">
-          <h1>Research Experience</h1>
+          <h1><%= I18n.t("academic.side_menu.research_experience") %></h1>
         </div>
         <p class="lead">Graduation Project</p>
         <ul>
@@ -76,9 +76,9 @@ sections:
         </ul> 
       </section>
 
-      <section id="online-courses">
+      <section id="online_courses">
         <div class="page-header">
-          <h1>Online Courses</h1>
+          <h1><%= I18n.t("academic.side_menu.online_courses") %></h1>
         </div>
         <p class="lead">Online Courses I've taken.</p>
         <ul>
@@ -113,11 +113,12 @@ sections:
             <li>Introduction To Psychology, with Paul Bloom - Open Yale Courses</li>
           </ul></li>
         </ul>
-
+        
+        <!--
         <p class="lead">Courses that I am currently taking.</p>
         <ul>
-          <li>Startup Engineering - Stanford - Coursera</li>
         </ul> 
+        -->
 
         <p class="lead">To list only the online courses for which I have certification of completion, please, follow this <a href="curriculum#online-courses">link</a>.</p>
       </section>
