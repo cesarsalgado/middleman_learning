@@ -23,16 +23,19 @@ sections:
           <h1><%= I18n.t("academic.side_menu.interests") %></h1>
         </div>  
         <p class="lead">I'm currently interested in Deep Learning, mainly ConvNets and RecurrentNets. I'm also interested in the combination of Deep Learning and Reinforcement Learning.</p>
+        <p class="lead">Some papers I think are interesting and I would like to investigate further in their direction:</p>
+        <ul>
+          <li><a href="http://arxiv.org/abs/1410.5401">Neural Turing Machines</a></li>
+          <li><a href="http://arxiv.org/abs/1410.4615">Learning to Execute</a></li>
+          <li><a href="http://arxiv.org/abs/1312.5602">Playing Atari with Deep Reinforcement Learning</a></li>
+        </ul>
       </section>
 
       <section id="education">
         <div class="page-header">
           <h1><%= I18n.t("academic.side_menu.education") %></h1>
         </div>
-        <p class="lead">University of Sao Paulo</p>
-        <ul>
-          <li>Bachelor's Degree, Computer Engineering (2007 - 2012)</li>
-        </ul>
+        <%= partial "education_partial" %>
       </section>
 
       <section id="research_experience">

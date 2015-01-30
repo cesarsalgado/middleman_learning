@@ -38,6 +38,7 @@ pt:
     education:
       usp: Universidade de São Paulo
       usp_spec: Graduação em Engenharia de Computação (2007 - 2012)
+      ufrgs_spec: Mestrado em Aprendizado de Máquina e Visão Computacional (2014 - presente)
     work_experience:
       pinuts:
         title: Desenvolvedor Android

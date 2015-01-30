@@ -36,10 +36,7 @@ sections:
         <div class="page-header">
           <h1><%= I18n.t("curriculum.side_menu.education") %></h1>
         </div>
-        <p class="lead"><%= I18n.t("curriculum.education.usp") %></p>
-        <ul>
-          <li><%= I18n.t("curriculum.education.usp_spec") %></li>
-        </ul>
+        <%= partial "education_partial" %>
       </section>
 
       <section id="work_experience">
