@@ -8,10 +8,10 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/js/google-code-prettify/prettify.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -45,74 +45,88 @@
 
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
-    <div class="container">
-      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span10">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-      <!-- Button to homepage -->
-      <a class="brand" href="./index.html">cesarsalgado.com</a>
+          <!-- Button to homepage -->
+          <a class="brand" href="/">cesarsalgado.com</a>
 
-      <div class="nav-collapse collapse">
-        <ul class="nav">
+          <div class="nav-collapse collapse">
+            <ul class="nav">
 
-          <!-- Home -->
-          
-          <li class= >
-            <a href="./index.html">Home</a>
-          </li>
+              <!-- Home -->
+              <li class="" >
+                <a href="/">Home</a>
+              </li>
 
-          <!-- Blog -->
-          
-          <li class= >
-            <a href="./blog">Blog</a>
-          </li>
+              <!-- Blog -->
+              <li class="" >
+                <a href="/blog">Blog</a>
+              </li>
 
-          <!-- Curriculum -->
-          
-          <li class= >
-            <a href="./curriculum">Curriculum</a>
-          </li>
+              <!-- Curriculum -->
+              <li class="" >
+                <a href="/curriculum">Curriculum</a>
+              </li>
 
-          <!-- Academic -->
-          
-          <li class= >
-            <a href="./academic">Academic</a>
-          </li>
+              <!-- Academic -->
+              <li class="" >
+                <a href="/academic">Academic</a>
+              </li>
 
-          <!-- About -->
-          
-          <li class= >
-            <a href="./about">About</a>
-          </li>
+              <!-- About -->
+              <!--
+              <li class="" >
+                <a href="/about">Bio</a>
+              </li>
+              -->
 
-          <!-- Contact -->
-          
-          <li class= >
-            <a href="./contact">Contact</a>
-          </li>
+              <!-- Contact -->
+              <li class="" >
+                <a href="/contact">Contact</a>
+              </li>
 
-          <!-- Apps -->
-<!--           
-          <li class= >
-            <a href="./apps">Apps</a>
-          </li>
- -->
-<!--           
-          <li class=active >
-            <a href="./more">More</a>
-          </li>
- -->        
-        </ul>
+              <!-- Apps -->
+    <!--                         <li class="active" >
+                <a href="/apps">Apps</a>
+              </li>
+     -->
+    <!--                         <li class="" >
+                <a href="/more">More</a>
+              </li>
+     -->        
+            </ul>
+          </div>
+        </div>
+        <div class="span2">
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <!-- English -->
+              <li class="active" >
+                <a href="/apps/">english</a>
+              </li>
+
+              <!-- Portuguese -->
+              <li class="" >
+                <a href="/pt/apps/">português</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
+
 <div class="container">
-  <p>More.</p>
+  <p>My Apps.</p>
 </div>
 
 
@@ -130,15 +144,15 @@
           <li class="muted">&middot;</li>
           <li><a href='http://www.facebook.com/cesar.salgado.332'>Facebook</a></li>
           <li class="muted">&middot;</li>
-          <li><a href="https://www.quora.com/Cesar-Salgado-1">Quora</a></li>
+          <li><a href='https://twitter.com/cesarsvs'>Twitter</a></li>
           <li class="muted">&middot;</li>
-          <li><a href='http://gravatar.com/cesarsvs'>Gravatar</a></li>
+          <li><a href="https://www.quora.com/Cesar-Salgado-1">Quora</a></li>
           <li class="muted">&middot;</li>
           <li><a href='https://github.com/cesarsalgado'>Github</a></li>
           <li class="muted">&middot;</li>
           <li><a href='http://stackoverflow.com/users/604964/cesarsalgado'>Stack Overflow</a></li>
           <li class="muted">&middot;</li>
-          <li><a href='https://www.coursera.org/user/i/fb008f4a5da0fc74f5edd8cb5c2413ff'>Coursera</a></li>
+          <li><a href='https://www.coursera.org/user/i/79af8cc4af779e350b4a6d2c09cb09a7'>Coursera</a></li>
           <li class="muted">&middot;</li>
           <li><a href='https://www.kaggle.com/users/118042/cesar'>Kaggle</a></li>
         </ul>
@@ -150,26 +164,25 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
-    <script src="js/bootstrap-affix.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap-transition.js"></script>
+    <script src="/js/bootstrap-alert.js"></script>
+    <script src="/js/bootstrap-modal.js"></script>
+    <script src="/js/bootstrap-dropdown.js"></script>
+    <script src="/js/bootstrap-scrollspy.js"></script>
+    <script src="/js/bootstrap-tab.js"></script>
+    <script src="/js/bootstrap-tooltip.js"></script>
+    <script src="/js/bootstrap-popover.js"></script>
+    <script src="/js/bootstrap-button.js"></script>
+    <script src="/js/bootstrap-collapse.js"></script>
+    <script src="/js/bootstrap-carousel.js"></script>
+    <script src="/js/bootstrap-typeahead.js"></script>
+    <script src="/js/bootstrap-affix.js"></script>
 
-    <script src="js/holder/holder.js"></script>
-    <script src="js/google-code-prettify/prettify.js"></script>
+    <script src="/js/holder/holder.js"></script>
+    <script src="/js/google-code-prettify/prettify.js"></script>
 
-    <script src="js/application.js"></script>
+    <script src="/js/application.js"></script>
 
 
     <!-- Analytics

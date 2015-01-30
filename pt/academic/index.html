@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="utf-8">
     <title>cesarsalgado.com</title>
@@ -8,10 +8,10 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/js/google-code-prettify/prettify.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -45,71 +45,85 @@
 
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
-    <div class="container">
-      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span10">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-      <!-- Button to homepage -->
-      <a class="brand" href="./index.html">cesarsalgado.com</a>
+          <!-- Button to homepage -->
+          <a class="brand" href="/pt/">cesarsalgado.com</a>
 
-      <div class="nav-collapse collapse">
-        <ul class="nav">
+          <div class="nav-collapse collapse">
+            <ul class="nav">
 
-          <!-- Home -->
-          
-          <li class= >
-            <a href="./index.html">Home</a>
-          </li>
+              <!-- Home -->
+              <li class="" >
+                <a href="/pt/">Principal</a>
+              </li>
 
-          <!-- Blog -->
-          
-          <li class= >
-            <a href="./blog">Blog</a>
-          </li>
+              <!-- Blog -->
+              <li class="" >
+                <a href="/pt/blog">Blog</a>
+              </li>
 
-          <!-- Curriculum -->
-          
-          <li class= >
-            <a href="./curriculum">Curriculum</a>
-          </li>
+              <!-- Curriculum -->
+              <li class="" >
+                <a href="/pt/curriculum">Curriculum</a>
+              </li>
 
-          <!-- Academic -->
-          
-          <li class=active >
-            <a href="./academic">Academic</a>
-          </li>
+              <!-- Academic -->
+              <li class="active" >
+                <a href="/pt/academic">Acadêmico</a>
+              </li>
 
-          <!-- About -->
-          
-          <li class= >
-            <a href="./about">About</a>
-          </li>
+              <!-- About -->
+              <!--
+              <li class="" >
+                <a href="/pt/about">Bio</a>
+              </li>
+              -->
 
-          <!-- Contact -->
-          
-          <li class= >
-            <a href="./contact">Contact</a>
-          </li>
+              <!-- Contact -->
+              <li class="" >
+                <a href="/pt/contact">Contato</a>
+              </li>
 
-          <!-- Apps -->
-<!--           
-          <li class= >
-            <a href="./apps">Apps</a>
-          </li>
- -->
-<!--           
-          <li class= >
-            <a href="./more">More</a>
-          </li>
- -->        
-        </ul>
+              <!-- Apps -->
+    <!--                         <li class="" >
+                <a href="/pt/apps">Apps</a>
+              </li>
+     -->
+    <!--                         <li class="" >
+                <a href="/pt/more">Mais</a>
+              </li>
+     -->        
+            </ul>
+          </div>
+        </div>
+        <div class="span2">
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <!-- English -->
+              <li class="" >
+                <a href="/academic/">english</a>
+              </li>
+
+              <!-- Portuguese -->
+              <li class="active" >
+                <a href="/pt/academic/">português</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
 
 <div class="container">
 
@@ -119,65 +133,46 @@
 
     <div class="span3 bs-docs-sidebar">
   <ul class="nav nav-list bs-docs-sidenav" data-spy="affix" data-offset-top="0">
-    
-      <li><a href=#interests> <i class="icon-chevron-right"></i> Interests </a></li>
-    
-      <li><a href=#education> <i class="icon-chevron-right"></i> Education </a></li>
-    
-      <li><a href=#research-experience> <i class="icon-chevron-right"></i> Research Experience </a></li>
-    
-      <li><a href=#online-courses> <i class="icon-chevron-right"></i> Online Courses </a></li>
-    
+        <li><a href=#interests> <i class="icon-chevron-right"></i> Interesses </a></li>
+        <li><a href=#education> <i class="icon-chevron-right"></i> Educação </a></li>
+        <li><a href=#research_experience> <i class="icon-chevron-right"></i> Pesquisa </a></li>
+        <li><a href=#online_courses> <i class="icon-chevron-right"></i> Cursos Online </a></li>
   </ul>
 </div>
+
 
     <div class="span9">
       <section id="interests">
         <div class="page-header">
-          <h1>Interests</h1>
+          <h1>Interesses</h1>
         </div>  
-        <p class="lead">My major areas of interest are Computer Science, Physics, Neuroscience, and Mathematics.</p>
-        <p class="lead">Below I list some specific topics for which I have interest in doing reaserch on and for which I have some exposure. My experience in each area are also shown.</p>
+        <p class="lead">I'm currently interested in Deep Learning, mainly ConvNets and RecurrentNets. I'm also interested in the combination of Deep Learning and Reinforcement Learning.</p>
+        <p class="lead">Some papers I think are interesting and I would like to investigate further in their direction:</p>
         <ul>
-          <li>Artificial Intelligence and Machine/Statistical Learning<ul>
-            <li>My <a href="#research-experience">Undergrad Research Project</a> was in this field.</li>
-            <li>Took <a href="#online-courses">some online courses</a> in this area too.</li>
-          </ul></li>
-          <li>Computational Neuroscience<ul>
-            <li>Took one online courses in this field.</li>
-          </ul></li>
-          <li>Information Theory<ul>
-            <li>Currently taking <a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-441-information-theory-spring-2010/index.htm">6.441-Iformation Theory</a> at MIT OpenCourseWare.</li>
-          </ul></li>
-        </ul>
-        <p class="lead">Some topics that I'm curious to learn about, but not necessarily do research, are shown below.</p>
-        <ul>
-          <li>General Relativity</li>
-          <li>Some Advanced Mathematics Courses such as:<ul>
-            <li>Number Theory</li>
-            <li>Real Analysis</li>
-            <li>Algebra</li>
-            <li>Topology</li>
-            <li>Functional Analysis</li>
-            <li>Geometry</li>
-          </ul></li>
-          <li>Economics</li>
+          <li><a href="http://arxiv.org/abs/1410.5401">Neural Turing Machines</a></li>
+          <li><a href="http://arxiv.org/abs/1410.4615">Learning to Execute</a></li>
+          <li><a href="http://arxiv.org/abs/1312.5602">Playing Atari with Deep Reinforcement Learning</a></li>
         </ul>
       </section>
 
       <section id="education">
         <div class="page-header">
-          <h1>Education</h1>
+          <h1>Educação</h1>
         </div>
-        <p class="lead">University of Sao Paulo</p>
-        <ul>
-          <li>Bachelor's Degree, Computer Engineering (2007 - 2012)</li>
-        </ul>
+        <p class="lead">Universidade Federal do Rio Grande do Sul</p>
+<ul>
+  <li>Mestrado em Aprendizado de Máquina e Visão Computacional (2014 - presente)</li>
+</ul>
+<p class="lead">Universidade de Sao Paulo</p>
+<ul>
+  <li>Graduação em Engenharia de Computação (2007 - 2012)</li>
+</ul>
+
       </section>
 
-      <section id="research-experience">
+      <section id="research_experience">
         <div class="page-header">
-          <h1>Research Experience</h1>
+          <h1>Pesquisa</h1>
         </div>
         <p class="lead">Graduation Project</p>
         <ul>
@@ -190,9 +185,9 @@
         </ul> 
       </section>
 
-      <section id="online-courses">
+      <section id="online_courses">
         <div class="page-header">
-          <h1>Online Courses</h1>
+          <h1>Cursos Online</h1>
         </div>
         <p class="lead">Online Courses I've taken.</p>
         <ul>
@@ -227,11 +222,12 @@
             <li>Introduction To Psychology, with Paul Bloom - Open Yale Courses</li>
           </ul></li>
         </ul>
-
+        
+        <!--
         <p class="lead">Courses that I am currently taking.</p>
         <ul>
-          <li>Startup Engineering - Stanford - Coursera</li>
         </ul> 
+        -->
 
         <p class="lead">To list only the online courses for which I have certification of completion, please, follow this <a href="curriculum#online-courses">link</a>.</p>
       </section>
@@ -242,13 +238,14 @@
 </div>
 
 
+
     <!-- Footer
     ================================================== -->
     <footer class="footer">
       <div class="container">
-        <p>Hosted on <a href='http://pages.github.com'>Github Pages</a> and powered by <a href='http://middlemanapp.com'>Middleman</a>.</p>
-        <p>This site used as a starting point the <a href='http://getbootstrap.com/2.3.2/'>Bootstrap 2.3.2 Docs site</a>.</p>
-        <p>This work is licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>Hospedado em <a href='http://pages.github.com'>Github Pages</a> e criado com <a href='http://middlemanapp.com'>Middleman</a>.</p>
+        <p>Esse site usou como ponto de partida o <a href='http://getbootstrap.com/2.3.2/'>Bootstrap 2.3.2 Docs site</a>.</p>
+        <p>Esse trabalho está licenciado sob <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
         <ul class="footer-links">
           <li><a href='http://www.linkedin.com/pub/cesar-salgado/13/641/505'>Linkedin</a></li>
           <li class="muted">&middot;</li>
@@ -256,15 +253,15 @@
           <li class="muted">&middot;</li>
           <li><a href='http://www.facebook.com/cesar.salgado.332'>Facebook</a></li>
           <li class="muted">&middot;</li>
-          <li><a href="https://www.quora.com/Cesar-Salgado-1">Quora</a></li>
+          <li><a href='https://twitter.com/cesarsvs'>Twitter</a></li>
           <li class="muted">&middot;</li>
-          <li><a href='http://gravatar.com/cesarsvs'>Gravatar</a></li>
+          <li><a href="https://www.quora.com/Cesar-Salgado-1">Quora</a></li>
           <li class="muted">&middot;</li>
           <li><a href='https://github.com/cesarsalgado'>Github</a></li>
           <li class="muted">&middot;</li>
           <li><a href='http://stackoverflow.com/users/604964/cesarsalgado'>Stack Overflow</a></li>
           <li class="muted">&middot;</li>
-          <li><a href='https://www.coursera.org/user/i/fb008f4a5da0fc74f5edd8cb5c2413ff'>Coursera</a></li>
+          <li><a href='https://www.coursera.org/user/i/79af8cc4af779e350b4a6d2c09cb09a7'>Coursera</a></li>
           <li class="muted">&middot;</li>
           <li><a href='https://www.kaggle.com/users/118042/cesar'>Kaggle</a></li>
         </ul>
@@ -276,26 +273,25 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
-    <script src="js/bootstrap-affix.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap-transition.js"></script>
+    <script src="/js/bootstrap-alert.js"></script>
+    <script src="/js/bootstrap-modal.js"></script>
+    <script src="/js/bootstrap-dropdown.js"></script>
+    <script src="/js/bootstrap-scrollspy.js"></script>
+    <script src="/js/bootstrap-tab.js"></script>
+    <script src="/js/bootstrap-tooltip.js"></script>
+    <script src="/js/bootstrap-popover.js"></script>
+    <script src="/js/bootstrap-button.js"></script>
+    <script src="/js/bootstrap-collapse.js"></script>
+    <script src="/js/bootstrap-carousel.js"></script>
+    <script src="/js/bootstrap-typeahead.js"></script>
+    <script src="/js/bootstrap-affix.js"></script>
 
-    <script src="js/holder/holder.js"></script>
-    <script src="js/google-code-prettify/prettify.js"></script>
+    <script src="/js/holder/holder.js"></script>
+    <script src="/js/google-code-prettify/prettify.js"></script>
 
-    <script src="js/application.js"></script>
+    <script src="/js/application.js"></script>
 
 
     <!-- Analytics
