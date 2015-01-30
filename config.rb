@@ -85,8 +85,6 @@ activate :livereload
 
 activate :i18n
 
-activate :directory_indexes
-
 set :css_dir, 'css'
 
 set :js_dir, 'js'
@@ -94,6 +92,12 @@ set :js_dir, 'js'
 set :images_dir, 'img'
 
 ignore "/about"
+
+activate :blog do |blog|
+  blog.permalink = "{title}.html"
+end
+
+activate :directory_indexes
 
 # Build-specific configuration
 configure :build do

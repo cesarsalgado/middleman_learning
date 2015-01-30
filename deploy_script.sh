@@ -1,7 +1,7 @@
 bundle exec middleman build
 git checkout gh-pages
 
-# Remove all files in derectory except the .git... local_resources and build
+# Remove all files in directory except the .git... local_resources and build
 find . -maxdepth 1 -not -regex "\(.*/\..*\)\|\.\|\./local_resources\|\./build" | xargs git rm -rf
 mv build/* .
 
